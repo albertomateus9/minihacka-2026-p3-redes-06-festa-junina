@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Festa Junina da Escola | MiniHacka P3 Redes</title>
+    <meta name="description" content="Um site para informar os alunos sobre horários, combinados, atrações e mudanças relacionadas à festa junina da escola." />
+    <meta name="theme-color" content="#b83b2d" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="--primary: #b83b2d; --secondary: #197278; --accent: #f6c453;">
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Festa Junina da Escola">
+        <span class="brand-mark">06</span>
+        <span>Festa Junina</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#previa">Prévia</a>
+        <a href="#equipe">Equipe</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <h1>Festa Junina da Escola</h1>
+          <p class="tagline">Avisos e ajustes da festa junina em uma página simples.</p>
+          <p>Um site para informar os alunos sobre horários, combinados, atrações e mudanças relacionadas à festa junina da escola.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#previa">Ver programação</a>
+            <a class="button button-secondary" href="#equipe">Conhecer equipe</a>
+          </div>
+          <ol class="step-list" aria-label="Fluxo principal">
+            <li>Ler avisos</li><li>Conferir horários</li><li>Participar</li>
+          </ol>
+        </div>
+        <div class="hero-media" aria-label="Visual do projeto">
+          <img src="assets/visual.svg" alt="Prévia visual do site Festa Junina da Escola" />
+        </div>
+      </section>
+
+      <section class="section" id="recursos">
+        <div class="section-heading">
+          <span>Projeto da equipe 06</span>
+          <h2>Uma proposta simples para virar protótipo navegável.</h2>
+        </div>
+        <div class="feature-grid">
+          
+        <article class="feature-card">
+          <span class="feature-index">01</span>
+          <h3>Programação</h3>
+          <p>Horários e atrações ficam disponíveis para consulta rápida.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">02</span>
+          <h3>Avisos importantes</h3>
+          <p>Mudanças de local, ensaios e combinados aparecem em destaque.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-index">03</span>
+          <h3>Participação dos alunos</h3>
+          <p>Espaço para orientar turmas, barracas e apresentações.</p>
+        </article>
+        </div>
+      </section>
+
+      <section class="section preview-section" id="previa">
+        <div class="preview-copy">
+          <span>Prévia interativa</span>
+          <h2>Experimente uma parte da ideia.</h2>
+          <p data-response>Avisos de ensaio: conferir horários por turma antes da apresentação.</p>
+          <div class="chip-row" aria-label="Opções da prévia">
+            
+          <button class="chip is-active" type="button" data-response="Avisos de ensaio: conferir horários por turma antes da apresentação.">Ensaios</button>
+          <button class="chip" type="button" data-response="Barracas selecionadas: acompanhe responsáveis e itens necessários.">Barracas</button>
+          <button class="chip" type="button" data-response="Apresentações selecionadas: ordem e horário disponíveis.">Apresentações</button>
+          </div>
+          <button class="button button-primary" type="button" data-demo-action>Ver programação</button>
+          <p class="counter" data-counter>Interações nesta visita: 0</p>
+        </div>
+        <div class="metric-grid">
+          
+          <article class="metric-card">
+            <span>Próximo aviso</span>
+            <strong>Ensaio geral</strong>
+            <p>Quarta-feira no pátio.</p>
+          </article>
+          <article class="metric-card">
+            <span>Atrações</span>
+            <strong>6 atividades</strong>
+            <p>Danças, comidas e brincadeiras.</p>
+          </article>
+          <article class="metric-card">
+            <span>Turmas</span>
+            <strong>3 escalas</strong>
+            <p>Organização por horário.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section team-section" id="equipe">
+        <div class="section-heading">
+          <span>Integrantes</span>
+          <h2>Funções da equipe no desenvolvimento.</h2>
+        </div>
+        <div class="team-grid">
+          
+        <article class="member-card">
+          <span>Gerente de Ideias</span>
+          <strong>Ágata Carvalho</strong>
+        </article>
+        <article class="member-card">
+          <span>Designer</span>
+          <strong>Lídia de Moraes</strong>
+        </article>
+        <article class="member-card">
+          <span>Construtor(a) HTML</span>
+          <strong>José Vinicius Ferreira</strong>
+        </article>
+        <article class="member-card">
+          <span>Estilista CSS</span>
+          <strong>Edianni Morais</strong>
+        </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>MiniHacka 2026-1 - 3º período de Redes de Computadores (Integrado).</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
